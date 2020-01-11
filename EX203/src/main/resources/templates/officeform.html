@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/officeform}" th:object="${office}"
+      method="post">
+    First Name: <input type="text" th:field="*{fname}" /><br />
+    Last Name: <input type="text" th:field="*{lname}" /><br />
+    DOB: <input type="number" th:field="*{dob}" /><br />
+    SSN: <input type="number" th:field="*{ssn}" /><br />
+    <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
